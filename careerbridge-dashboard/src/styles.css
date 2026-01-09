@@ -1,0 +1,499 @@
+/* AUTH (LOGIN / SIGNUP) */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.auth-card {
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6fb;
+}
+
+.sidebar {
+  width: 240px;
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.side-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li {
+  padding: --12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.side-menu li:hover {
+  background: #334155;
+}
+
+.side-menu .active {
+  background: #4f46e5;
+}
+
+.logout {
+  margin-top: 30px;
+  background: #dc2626;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 60px;
+  background: white;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.user {
+  font-weight: 500;
+}
+
+
+.dashboard-cards {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.dash-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.dash-card:hover {
+  transform: translateY(-6px);
+}
+
+.dash-card h4 {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.dash-card p {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+
+.blue p { color: #2563eb; }
+.orange p { color: #f97316; }
+.green p { color: #16a34a; }
+.purple p { color: #7c3aed; }
+
+.skills-page {
+  padding: 30px;
+}
+
+.skills-page h2 {
+  margin-bottom: 5px;
+}
+
+.sub-text {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.skill-card h4 {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #22c55e);
+}
+/* ===== DASHBOARD BASE ===== */
+.cb-dashboard {
+  padding: 25px;
+}
+
+/* ===== TOP STATS ===== */
+.cb-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.cb-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.cb-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.cb-card h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.cb-card span {
+  font-size: 13px;
+}
+
+.up { color: #16a34a; }
+.down { color: #dc2626; }
+.neutral { color: #6366f1; }
+
+/* ===== LOWER SECTION ===== */
+.cb-lower {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.cb-box {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.cb-box h3 {
+  margin-bottom: 6px;
+}
+
+.cb-box p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* Fake chart */
+.fake-chart {
+  margin-top: 15px;
+  height: 160px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #6366f1, #22c55e);
+  opacity: 0.85;
+}
+
+/* Highlight box */
+.highlight {
+  background: linear-gradient(135deg, #6366f1, #7c3aed);
+  color: white;
+}
+
+.highlight p {
+  color: #e0e7ff;
+}
+
+.highlight button {
+  margin-top: 15px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #4f46e5;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== SIDEBAR ===== */
+.cb-sidebar {
+  width: 240px;
+  background: #111827;
+  color: white;
+  padding: 20px;
+}
+
+.cb-sidebar .logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cb-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cb-sidebar li {
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.cb-sidebar li:hover,
+.cb-sidebar .active {
+  background: #4f46e5;
+}
+
+.logout-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #dc2626;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== NAVBAR ===== */
+.cb-navbar {
+  height: 60px;
+  background: white;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+.kpi-ribbon {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* ===== DASHBOARD BASE ===== */
+.cb-dashboard {
+  padding: 25px;
+}
+
+/* ===== KPI RIBBON ===== */
+.kpi-ribbon {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+/* ===== STATS ===== */
+.cb-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.cb-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+  transition: all 0.35s ease;
+}
+
+.cb-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.cb-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.cb-card h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.up { color: #16a34a; }
+.down { color: #dc2626; }
+.neutral { color: #6366f1; }
+
+/* ===== QUICK ACTIONS ===== */
+.quick-actions {
+  display: flex;
+  gap: 15px;
+  margin: 25px 0;
+}
+
+.quick-actions button {
+  background: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.quick-actions button:hover {
+  background: #4f46e5;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ===== LOWER SECTION ===== */
+.cb-lower {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.cb-box {
+  background: white;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.cb-box h3 {
+  margin-bottom: 6px;
+}
+
+.cb-box p {
+  color: #555;
+  font-size: 14px;
+}
+
+/* ===== PROGRESS BAR ===== */
+.goal-bar {
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.goal-fill {
+  width: 78%;
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #4f46e5);
+  border-radius: 10px;
+}
+
+.progress-text {
+  font-size: 13px;
+  color: #555;
+}
+
+/* ===== HIGHLIGHT BOX ===== */
+.highlight {
+  background: linear-gradient(135deg, #6366f1, #7c3aed);
+  color: white;
+}
+
+.highlight p {
+  color: #e0e7ff;
+}
+
+.highlight button {
+  margin-top: 15px;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  background: white;
+  color: #4f46e5;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ===== ACTIVITY FEED ===== */
+.activity-feed {
+  margin-top: 25px;
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.activity-feed ul {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-feed li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* ===== SMART TIP ===== */
+.empty-hint {
+  margin-top: 25px;
+  padding: 14px;
+  background: #eef2ff;
+  border-left: 4px solid #4f46e5;
+  border-radius: 10px;
+  font-size: 14px;
+}
