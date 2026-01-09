@@ -26,4 +26,4 @@ cd careerbridge-dashboard
 4. Start the app:
    npm start
 
-5. 
+ 
